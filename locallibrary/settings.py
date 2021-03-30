@@ -33,7 +33,7 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 # ALLOWED_HOSTS = []
 # For deploying find the respective code for aws, azure, like below
 # ALLOWED_HOSTS = [rocksworld]
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', '127.0.0.1']
 
 # Application definition
 
@@ -86,17 +86,29 @@ WSGI_APPLICATION = 'locallibrary.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql',
+#             'NAME': 'jangolocaldb',
+#             'USER': 'postgres',
+#             'PASSWORD': 'root',
+#             'HOST': 'localhost',
+#             'PORT': 5432,
+#         }
+# }
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': 'jangolocaldb',
             'USER': 'postgres',
             'PASSWORD': 'root',
-            'HOST': 'localhost',
-            'PORT': 5432,
+            'HOST': 'postgres',
+            'PORT': '5432',
+            'OPTIONS': {
+                'client_encoding': 'UTF8',
+            },
         }
-}
-
+    }
 
 
 # DATABASES = {
