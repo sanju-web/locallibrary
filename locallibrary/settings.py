@@ -86,29 +86,20 @@ WSGI_APPLICATION = 'locallibrary.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.postgresql',
-#             'NAME': 'jangolocaldb',
-#             'USER': 'postgres',
-#             'PASSWORD': 'root',
-#             'HOST': 'localhost',
-#             'PORT': 5432,
-#         }
-# }
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': 'jangolocaldb',
             'USER': 'postgres',
             'PASSWORD': 'root',
-            'HOST': 'postgres',
-            'PORT': '5432',
+            'HOST': 'localhost',
+            'PORT': 5432,
             'OPTIONS': {
                 'client_encoding': 'UTF8',
             },
         }
-    }
+}
+
 
 
 # DATABASES = {
