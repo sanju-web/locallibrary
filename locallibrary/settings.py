@@ -33,7 +33,7 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 # ALLOWED_HOSTS = []
 # For deploying find the respective code for aws, azure, like below
 # ALLOWED_HOSTS = [rocksworld]
-ALLOWED_HOSTS = ['*', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
