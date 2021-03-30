@@ -1,0 +1,5 @@
+
+
+	- Database name for the mozilla locallibrary practice project is:
+
+	mozidjangolocallibrary
